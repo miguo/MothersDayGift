@@ -1,133 +1,128 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-     <link rel="stylesheet" type="text/css" href="style.css" />
-    
-    <title>I Love You, Mom!</title>
-
-    <script src="jquery/jquery-1.9.1.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
-<script src="jquery/jquery.flip.js"></script>
+<html lang="en">
+    <head>
+        <title>I Love You, Mom!</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="jquery/jquery-1.9.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+        <script src="jquery/jquery.flip.js"></script>
 		<script type="text/javascript">
 			$(document).on("click", ".flipbox-forward", function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    $this.flip({
-        direction: $this.data("direction"),
-        color: $this.data("color"),
-        content: $this.data("title"),
-        onBefore: function() {
-            $this.removeClass('flipbox-forward');
-            $this.addClass('flipbox-revert');
-        }
-    })
-});
+                e.preventDefault();
+                var $this = $(this);
+                
+                $this.flip({
+                direction: $this.data("direction"),
+                color: $this.data("color"),
+                content: $this.data("title"),
+                
+                    onBefore: function() {
+                        $this.removeClass('flipbox-forward');
+                        $this.addClass('flipbox-revert');
+                    }
+                })
+            });
 
-$(document).on("click", ".flipbox-revert", function(e) {
-    e.preventDefault();
-    var $this = $(this);
-    $this.revertFlip();
-    $this.removeClass('flipbox-revert');
-    $this.addClass('flipbox-forward');
-});
-  
+            $(document).on("click", ".flipbox-revert", function(e) {
+                e.preventDefault();
+                var $this = $(this);
+                $this.revertFlip();
+                $this.removeClass('flipbox-revert');
+                $this.addClass('flipbox-forward');
+            });
 		</script>	
 
-
-<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     
-</head>
+    </head>
 
-<body>
-    
+    <body>
+        <div width="940" align="center"> 
+            <h1><span style="font-size: 48px">Reasons why my <span class="Mom">Mom</span> is <span class="incredible">incredible</span></span> .</h1>
+        </div>
 
+        <table width ="800" align="center" border="0">
 
-<div width="940" align="center"> 
-<h1><span style="font-size: 48px">Reasons why my <span class="Mom">Mom</span> is <span class="incredible">incredible</span></span> .</h1>
-</div>
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You are my exercise hero because you run several marathons a year and train weekly. I get winded after two laps around my complex.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-1_edited-12.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You had to raise one dirty child and one big spender all on your own. We turned out more than alright.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-2-copy.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="We've had more conversations about being buzzed and drunk than I can count. Fun talks.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-31.jpg" width=200px height=200px>
+        </div></td>
+        </tr>
 
-<table width="800" align="center" border="0">
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I love that we talk multiple times a week and that you listen and respond to everything I say, no matter how random it is.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-4-copy.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I definitely got my love of food from you...and possibly my slow eating as well!">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-5.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You filled my childhood with crazy cool memories like camping, playing in the snow in Arizona at midnight, and bike rides in the Bay.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-6.jpg" width=200px height=200px>
+        </div></td>
+        </tr>
 
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You are my exercise hero because you run several marathons a year and train weekly. I get winded after two laps around my complex.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-1_edited-12.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You had to raise one dirty child and one big spender all on your own. We turned out more than alright.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-2-copy.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="We've had more conversations about being buzzed and drunk than I can count. Fun talks.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-31.jpg" width=200px height=200px>
-</div></td>
-</tr>
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're great at finding ways to spice up life.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m7-always-finding-ways-to-spice-up-your-life.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You've taught me it's important to feel sexy at any age.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m8-feel-sexy-at-any-age.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're an amazing example of fighting for a cause.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m9-fight-for-a-cause.jpg" width=200px height=200px>
+        </div></td>
 
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I love that we talk multiple times a week and that you listen and respond to everything I say, no matter how random it is.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-4-copy.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I definitely got my love of food from you...and possibly my slow eating as well!">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-5.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You filled my childhood with crazy cool memories like camping, playing in the snow in Arizona at midnight, and bike rides in the Bay.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/mom-6.jpg" width=200px height=200px>
-</div></td>
-</tr>
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You show me how to be a great grand-daughter by being a great daughter.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m10-honor-love-parents-grandparents.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're not afraid to laugh at yourself.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m11-laugh-at-yourself.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I've learned from you that it's okay to sit back and let life surprise you.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m12-let-life-surprise-you.jpg" width=200px height=200px>
+        </div></td>
+        </tr>
 
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're great at finding ways to spice up life.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m7-always-finding-ways-to-spice-up-your-life.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You've taught me it's important to feel sexy at any age.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m8-feel-sexy-at-any-age.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're an amazing example of fighting for a cause.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m9-fight-for-a-cause.jpg" width=200px height=200px>
-</div></td>
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="There are times in life to let loose and be silly. For me and Brit, most of those times are when we're taking a photo with you.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m13-let-loose-and-be-silly.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You showed me not to judge others based on outer appearances, but to accept others and love unconditionally.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m14-love-unconditionally-accept-others.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're awesome because you made me Thanksgiving dinner in October so we could spend Thanksgiving together (and so I could eat my favorite foods!) ">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m15-made-thanksgiving-dinner-in-october.jpg" width=200px height=200px>
+        </div></td>
+        </tr>
 
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You show me how to be a great grand-daughter by being a great daughter.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m10-honor-love-parents-grandparents.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're not afraid to laugh at yourself.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m11-laugh-at-yourself.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="I've learned from you that it's okay to sit back and let life surprise you.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m12-let-life-surprise-you.jpg" width=200px height=200px>
-</div></td>
-</tr>
+        <tr height = "220">
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You remind us that it's important to remember our roots.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m16-remember-our-roots.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="Without you, I wouldn't have had the courage and strength to move to China and survive here for the past four years.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m17-stay-strong-and-push-through.jpg" width=200px height=200px>
+        </div></td>
+        <td align="center"><div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You showed me how to love your siblings even if they get secret peaches at night and you don't.">
+        <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m18-treausre-siblings1.jpg" width=200px height=200px>
+        </div></td>
 
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="There are times in life to let loose and be silly. For me and Brit, most of those times are when we're taking a photo with you.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m13-let-loose-and-be-silly.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You showed me not to judge others based on outer appearances, but to accept others and love unconditionally.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m14-love-unconditionally-accept-others.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You're awesome because you made me Thanksgiving dinner in October so we could spend Thanksgiving together (and so I could eat my favorite foods!) ">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m15-made-thanksgiving-dinner-in-october.jpg" width=200px height=200px>
-</div></td>
-</tr>
-
-<tr height = "220">
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You remind us that it's important to remember our roots.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m16-remember-our-roots.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="Without you, I wouldn't have had the courage and strength to move to China and survive here for the past four years.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m17-stay-strong-and-push-through.jpg" width=200px height=200px>
-</div></td>
-<td align="center">    <div class="flipbox flipbox-forward" data-color="#FF9000" data-direction="rl" data-title="You showed me how to love your siblings even if they get secret peaches at night and you don't.">
-    <img src="http://itsmichelleguo.files.wordpress.com/2013/05/m18-treausre-siblings1.jpg" width=200px height=200px>
-</div></td>
-
-</tr>
+        </tr>
 
 
-</table>
+        </table>
 
-<div width="940" align="center">
-    <div STYLE="height: 5px; margin-top:20px; margin-bottom:20px; width: 940px; border-top: 1px solid #e0d5c9;"></div>
-<p><span class="copyright">&#169; 2013 Michelle Guo. All rights reserved.</span></p>
-</div>
+        <div width="940" align="center">
+            <div STYLE="height: 5px; margin-top:20px; margin-bottom:20px; width: 940px; border-top: 1px solid #e0d5c9;"></div>
+            <p><span class="copyright">&#169; 2013 Michelle Guo. All rights reserved.</span></p>
+        </div>
    
-</body>
+    </body>
 </html>

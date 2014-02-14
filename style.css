@@ -46,16 +46,16 @@ h1 {
 
 
 .flipbox {
-width: 200px;
-height: 200px;
-line-height: 1.5em;
-background-color: white;
-font-family: 'ChunkFive Regular', Tahoma, Helvetica;
-font-size: 1em;
-color: white;
-text-align: center;
-display: table-cell;
-vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    line-height: 1.5em;
+    background-color: white;
+    font-family: 'ChunkFive Regular', Tahoma, Helvetica;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 
